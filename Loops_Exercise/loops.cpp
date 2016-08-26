@@ -51,7 +51,7 @@ int main()
 		{
 			int loop = 100;
 			for (int i = 0; i < 101; i++)
-
+			std::cout << i << std::endl;
 				if (i % 3 == 0)
 				{
 					printf("Fizz");
@@ -64,8 +64,6 @@ int main()
 				{
 					printf("FizzBuzz");
 				}
-
-				std::cout << i << std::endl;
 		}
 
 	system("pause");
