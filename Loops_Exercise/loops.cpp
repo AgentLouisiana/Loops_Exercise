@@ -10,17 +10,17 @@ int main()
 		- Modify the for loop to include 0 and not 100
 		- Modify the for loop to not include 0 and include 100
 		- Modify the for loop to decrement by 2*/
+	{
+		int loop = 100;
+		for (int i = 100; i > -1; i--)
+		{
+			std::cout << i << std::endl;
+		}
 
-			int loop = 100;
-			for (int i = 100; i > -1; i--)
-			{
-				std::cout << i << std::endl;
-			}
-		
 
 		system("pause");
 
-		
+
 		{
 			int loop = 100;
 			for (int i = 99; i > -1; i--)
@@ -46,6 +46,9 @@ int main()
 				std::cout << i << std::endl;
 			}
 		}
+	}
+		system("pause");
+
 			//#2
 
 			/*Using a for loop, iterate through numbers 0 to 100.
@@ -54,6 +57,7 @@ int main()
 				- For multiples of 3 and 5 print “FizzBuzz”
 				- Otherwise print the number.
 				Note, you will need to use the modulus operator (%)*/
+
 			int loop = 100;
 			for (int i = 0; i < 101; i++)
 			{
@@ -69,8 +73,15 @@ int main()
 				{
 					printf("FizzBuzz");
 				}
+				else
+				{
+					printf("%i");
+				}
 				std::cout << i << std::endl;
 			}
+
+			system("pause");
+
 			//3
 
 			//If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum
@@ -80,9 +91,8 @@ int main()
 
 			int multiple[1000];
 			int sum = 0;
-			{
 				for (int i = 0; i < 1000; i++)
-				{
+			{
 					if (i % 3 == 0 && i % 5 != 0)
 				{
 						multiple[i] = i;
