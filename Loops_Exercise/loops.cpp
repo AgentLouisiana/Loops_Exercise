@@ -63,21 +63,21 @@ int main()
 			{
 				if (i % 3 == 0 && i % 5 != 0)
 				{
-					printf("Fizz");
+					std::cout << "Fizz" << std::endl;
 				}
 				else if (i % 5 == 0 && i % 3 != 0)
 				{
-					printf("Buzz");
+					std::cout << "Buzz" << std::endl;
 				}
 				else if (i % 5 == 0 && i % 3 == 0)
 				{
-					printf("FizzBuzz");
+					std::cout << "FizzBuzz" << std::endl;
 				}
 				else
-				{
-					printf("%i");
+				{		
+					std::cout << i << std::endl;
 				}
-				std::cout << i << std::endl;
+	
 			}
 
 			system("pause");
@@ -93,11 +93,11 @@ int main()
 			int sum = 0;
 				for (int i = 0; i < 1000; i++)
 			{
-					if (i % 3 == 0 && i % 5 != 0)
+				if (i % 3 == 0 && i % 5 != 0)
 				{
 						multiple[i] = i;
 				}
-					else if (i % 5 == 0 && i % 3 != 0)
+				else if (i % 5 == 0 && i % 3 != 0)
 				{
 					multiple[i] = i;
 				}
